@@ -23,11 +23,11 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/languages_full.mk)
 $(call inherit-product, device/lenovo/aio_row/device.mk)
 
 # Inherit some common aosp stuff.
-$(call inherit-product, vendor/aosp/common.mk)
+$(call inherit-product, vendor/cm/conf*/common.mk)
 
 # Device identifier. This must come after all inclusions
 PRODUCT_DEVICE := aio_row
-PRODUCT_NAME := aosp_aio_row
+PRODUCT_NAME := lineage_aio_row
 PRODUCT_BRAND := Lenovo
 PRODUCT_MODEL := A7000-a
 PRODUCT_MANUFACTURER := Lenovo
